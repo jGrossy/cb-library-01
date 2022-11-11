@@ -31,7 +31,7 @@ class Library {
      */
     async filterBookList(Title, Category) {
         const db = new Mockdb();
-        return await db.getBooks(Title, Category);
+        return await db.filterBookList(Title, Category);
     }
 }
 

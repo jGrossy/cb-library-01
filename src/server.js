@@ -45,7 +45,7 @@ class Server {
         );
         this.app.use(correlator());
         this.app.use(debugRequest);
-        this.app.use(debugTiming);
+        // this.app.use(debugTiming);
         this.app.use(authorizeHeaders);
         this.app.use('', router);
 

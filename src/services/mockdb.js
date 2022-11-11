@@ -5,6 +5,15 @@ const { isEmpty, lowerCase } = require('lodash');
 class Mockdb {
     /**
      *
+     * @returns
+     */
+    async getBooks() {
+        const data = jsonfile.readFileSync(dbFilePath);
+        return data.Books;
+    }
+
+    /**
+     *
      * get a book list by filter,
      * if filters are empty get all books
      *
@@ -12,32 +21,29 @@ class Mockdb {
      * @param {string} Category
      * @returns
      */
-    async getBooks(Title, Category) {
-        if (isEmpty(Title) && isEmpty(Category)) {
-            return Promise.resolve(jsonfile.readFileSync(dbFilePath));
-        } else {
-            const data = jsonfile.readFileSync(dbFilePath);
-            const bookList = [];
-            data.Books.forEach((book) => {
-                if (!isEmpty(Title) && isEmpty(Category) && lowerCase(book.Title).includes(lowerCase(Title))) {
-                    bookList.push(book);
-                }
+    async filterBookList(Title, Category) {
+        const data = jsonfile.readFileSync(dbFilePath);
+        const bookList = [];
 
-                if (isEmpty(Title) && !isEmpty(Category) && lowerCase(book.Genre).includes(lowerCase(Category))) {
-                    bookList.push(book);
-                }
+        data.Books.forEach((book) => {
+            if (!isEmpty(Title) && isEmpty(Category) && lowerCase(book.Title).includes(lowerCase(Title))) {
+                bookList.push(book);
+            }
 
-                if (
-                    !isEmpty(Title) &&
-                    !isEmpty(Category) &&
-                    lowerCase(book.Title).includes(lowerCase(Title)) &&
-                    lowerCase(book.Genre).includes(lowerCase(Category))
-                ) {
-                    bookList.push(book);
-                }
-            });
-            return bookList;
-        }
+            if (isEmpty(Title) && !isEmpty(Category) && lowerCase(book.Genre).includes(lowerCase(Category))) {
+                bookList.push(book);
+            }
+
+            if (
+                !isEmpty(Title) &&
+                !isEmpty(Category) &&
+                lowerCase(book.Title).includes(lowerCase(Title)) &&
+                lowerCase(book.Genre).includes(lowerCase(Category))
+            ) {
+                bookList.push(book);
+            }
+        });
+        return bookList;
     }
 
     /**

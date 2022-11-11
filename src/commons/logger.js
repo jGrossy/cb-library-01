@@ -48,7 +48,6 @@ const theLogstashFormat = combine(
             message: prettyFormatMessage({ label, timestamp, level, message, ...meta }),
             fields: Object.assign({}, omit(meta, ['level', 'message'])),
             source: process.env.APP_NAME,
-            transactionId: uuidv4(),
         });
     }),
 );

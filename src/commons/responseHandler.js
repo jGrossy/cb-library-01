@@ -55,7 +55,7 @@ function debugRequest(req, _, next) {
 
     _info(compact([req.correlationId(), HTTPReqUserAgent]).join(' | '), info);
 
-    req.FBLogInfo = [HTTPReqMethod, HTTPReqOriginalURL, HTTPReqIP, HTTPReqUserAgent].join(' | ');
+    req.FBLogInfo = [HTTPReqMethod, HTTPReqOriginalURL, HTTPReqIP, req.correlationId(), HTTPReqUserAgent].join(' | ');
 
     next();
 }
