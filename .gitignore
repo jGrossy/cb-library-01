@@ -1,0 +1,7 @@
+# Environment variables
+.env
+logs
+build
+node_modules
+.vscode
+.idea

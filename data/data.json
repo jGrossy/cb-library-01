@@ -1,0 +1,84 @@
+{
+  "Books": [
+    {
+      "Title": "Fundamentals of Wavelets",
+      "Author": "Goswami Jaideva",
+      "Genre": "tech"
+    },
+    {
+      "Title": "Data Smart",
+      "Author": "Foreman, John",
+      "Genre": "tech"
+    },
+    {
+      "Title": "God Created the Integers",
+      "Author": "Hawking, Stephen",
+      "Genre": "tech"
+    },
+    {
+      "Title": "Superfreakonomics",
+      "Author": "Dubner, Stephen",
+      "Genre": "science,economics"
+    },
+    {
+      "Title": "Orientalism",
+      "Author": "Said, Edward",
+      "Genre": "nonfiction,history"
+    },
+    {
+      "Title": "Nature of Statistical Learning Theory",
+      "Author": "Vapnik, Vladimir",
+      "Genre": "tech,data_science"
+    },
+    {
+      "Title": "Integration of the Indian States",
+      "Author": "Menon, VP",
+      "Genre": "nonfiction,history"
+    },
+    {
+      "Title": "The Drunkard's Walk",
+      "Author": "Mlodinow, Leonard",
+      "Genre": "science,mathematics"
+    },
+    {
+      "Title": "Image Processing & Mathematical Morphology",
+      "Author": "Shih, Frank",
+      "Genre": "tech,signal_processing"
+    },
+    {
+      "Title": "How to Think Like Sherlock Holmes",
+      "Author": "Konnikova, Maria",
+      "Genre": "nonfiction,psychology"
+    },
+    {
+      "Title": "Slaughterhouse Five",
+      "Author": "Vonnegut, Kurt",
+      "Genre": "fiction,classic"
+    },
+    {
+      "Title": "Birth of a Theorem",
+      "Author": "Villani, Cedric",
+      "Genre": "science,mathematics"
+    },
+    {
+      "Title": "Structure & Interpretation of Computer Programs",
+      "Author": "Sussman, Gerald",
+      "Genre": "tech,computer_science"
+    },
+    {
+      "Title": "The Age of Wrath",
+      "Author": "Eraly, Abraham",
+      "Genre": "nonfiction,history"
+    },
+    {
+      "Title": "Statistical Decision Theory'",
+      "Author": "Pratt, John",
+      "Genre": "tech,data_science"
+    },
+    {
+      "Title": "Data Mining Handbook",
+      "Author": "Nisbet, Robert",
+      "Genre": "tech,data_science"
+    }
+  ]
+}

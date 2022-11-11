@@ -1,0 +1,25 @@
+{
+    "reporter": [
+      "html",
+      "lcovonly",
+      "clover",
+      "text",
+      "text-summary"
+    ],
+    "check-coverage": true,
+    "all": true,
+    "extension": [
+      ".js",
+      ".jsx"
+    ],
+    "include": [
+      "**"
+    ],   
+    "exclude": [
+      "test/**"
+    ],
+    "functions": 70,
+    "lines": 70,
+    "statements": 70,
+    "branches": 50
+}
