@@ -47,7 +47,7 @@ describe('Library', function () {
 
             console.dir(data, { depth: null });
             assert.equal(status, 200);
-            assert.equal(data.Books.length, 16);
+            assert.equal(data.length, 16);
         });
 
         it('it should get a book with Title = Slaughterhouse Five', async () => {
